@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap'); 
+
+.active {
+  background: linear-gradient(to top right, #6366f1,#a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pfp {
+  background: linear-gradient(to right, #6366f1,#a855f7, #ec4899);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.message {
+  background: 
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #6366f1,#a855f7, #ec4899) border-box;
+    border-color: transparent;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+  -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+body {  
+  font-family:'Poppins', sans-serif;
+}  
